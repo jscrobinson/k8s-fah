@@ -23,6 +23,10 @@ RUN apt-get update && \
 ADD config.xml /etc/fahclient/config.xml
 
 WORKDIR /var/lib/fahclient
+
+COPY /scripts /scripts
+RUN chmod +x /scripts/*.sh
+ENTRYPOINT [ "/scripts/entrypoint.sh" ]
 CMD	["/usr/bin/FAHClient", \
 	"--config", "/etc/fahclient/config.xml", \
 	"--config-rotate=false", \

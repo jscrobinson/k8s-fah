@@ -1,0 +1,17 @@
+---
+# Source: foldingathome/templates/config-map.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: release-name-foldingathome
+data:
+  config.xml: |
+    <config>
+      <user value=""/>
+      <team value=""/>
+      <passkey value=""/>
+      <power value="full"/>
+      <gpu value="true"/>
+      <fold-anon value="false"/>
+    </config>
+    

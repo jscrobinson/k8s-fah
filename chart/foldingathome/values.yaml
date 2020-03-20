@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: croudtech/fah-covid
+  repository: richstokes20/fah-covid
   tag: latest
   pullPolicy: IfNotPresent
 
