@@ -32,5 +32,5 @@ CMD	["/usr/bin/FAHClient", \
 	"--config-rotate=false", \
 	"--gpu=true", \
   "--priority=idle", \
-	# "--run-as", "fahclient", \
-	"--pid-file=/var/run/fahclient.pid"]
+	"--pid-file=/var/run/fahclient.pid", \
+  "--cause=covid"]
